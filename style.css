@@ -29,32 +29,42 @@ header
 {
   grid-area: header;
   min-width: 100%;
-}
-
-.menu 
-{
-  box-sizing: border-box;
   border-top: 2px solid #ae7c78;
   border-bottom: 2px solid #ae7c78;
+}
+
+.menu
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul
+{
   display: flex;
   flex-wrap: wrap;
   min-width: 100%;
-  justify-content: space-evenly;
+  gap: 85px;
+  justify-content: center;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-  
-.menu div
+
+.menu ul li
 {
   text-align: center;
   box-sizing: border-box;
   width: auto;
-
-  margin: 20px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.menu div a,
-.menu div .img
-{ 
+.menu ul a, 
+.menu ul img
+{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   text-decoration-line: none;
@@ -78,19 +88,19 @@ header
 .description div:first-child
 {
   align-self: flex-start;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .description div:nth-child(2)
 {
   align-self: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .description div:nth-child(3)
 {
   align-self: flex-start;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .description h1.Playfair-Regular
@@ -310,18 +320,17 @@ header
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .catalog
 {
   grid-area: catalog;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   min-height: 442px;
   width: auto;
   height: auto;
-  color: white;
 }
 
 .catalog ul
@@ -336,29 +345,39 @@ header
   align-items: flex-start;
 }
 
-.catalog ul li
+.catalog ul a li
 {
   text-align: center;
-  min-height: 442px;
-  flex-basis: 387px;
   margin-bottom: 20px;
 }
 
-.catalog ul li:first-child
+.catalog ul a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.catalog ul a li
+{
+  height: 442px;
+  width: 387px;
+}
+
+.catalog ul a:first-of-type li
 {
   background: url(img/wedding_bouquets.jpg) no-repeat rgba(174, 124, 120, 0.6);
   background-blend-mode: multiply;
   border-radius: 10px;
 }
 
-.catalog ul li:nth-child(2)
+.catalog ul a:nth-of-type(2) li
 {
   background: url(img/peony-flowers-vase.jpg) no-repeat rgba(174, 124, 120, 0.6);
   background-blend-mode: multiply;
   border-radius: 10px;
 }
 
-.catalog ul li:nth-child(3)
+.catalog ul a:nth-of-type(3) li
 {
   background: url(img/catalog-choose_bouquet.jpg) no-repeat rgba(174, 124, 120, 0.6);
   background-blend-mode: multiply;
@@ -367,7 +386,7 @@ header
 
 .catalog h3
 {
-  padding-top: 160px;
+  padding-top: 180px;
   font-family: 'Playfair Display', sans-serif;
   font-size: 36px;
   line-height: 10px;
@@ -787,6 +806,12 @@ header
   font-weight: bold;
   padding-left: 30px;
   padding-top: 40px;
+}
+
+.contacts div p a
+{
+  text-decoration: none;
+  color: #ae7c78;
 }
 
 .contacts p
