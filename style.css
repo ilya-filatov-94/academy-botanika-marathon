@@ -836,10 +836,10 @@ header
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0;
-  gap: 10px;
+  gap: 80px;
 }
 
 .footer div a
