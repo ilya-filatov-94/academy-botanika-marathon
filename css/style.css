@@ -137,16 +137,16 @@ header
 .description a.view-catalog
 { 
   display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  text-align: center;
   text-decoration-line: none;
   background-color: #d89999;
   width: 285px;
+  height: 80px;
   border-radius: 40px;
-  padding: auto auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
   color: white;
 }
 
@@ -304,10 +304,10 @@ header
   text-decoration-line: none;
   background-color: #d89999;
   width: 285px;
+  height: 80px;
   border-radius: 40px;
-  padding: auto auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  box-sizing: border-box;
+  padding-top: 30px;
   color: white;
 }
 
