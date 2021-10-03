@@ -8,17 +8,17 @@ html, body
 body
 {
   display: grid;
-  grid-template-areas: "header header header header header header header header header header header header"
-                       "description description description description description description description description description description description description"
-                       "advantages advantages advantages advantages advantages advantages advantages advantages advantages advantages advantages advantages"
-                       "popular popular popular popular popular popular popular popular popular popular popular popular"
-                       "catalog catalog catalog catalog catalog catalog catalog catalog catalog catalog catalog catalog"
-                       "discount discount discount discount discount discount discount discount discount discount discount discount"
-                       "steps steps steps steps steps steps steps steps steps steps steps steps"
-                       "news news news news news news news news news news news news"
-                       "reviews reviews reviews reviews reviews reviews reviews reviews reviews reviews reviews reviews"
-                       "contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts"
-                       "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-template-areas: "header header header"
+                       "description description description"
+                       "advantages advantages advantages"
+                       "popular popular popular"
+                       "catalog catalog catalog"
+                       "discount discount discount"
+                       "steps steps steps"
+                       "news news news"
+                       "reviews reviews reviews"
+                       "contacts contacts contacts"
+                       "footer footer footer";
   grid-template-rows: auto;
   margin-right: auto;
   margin-left: auto;
@@ -68,6 +68,15 @@ header
   font-size: 16px;
   text-decoration-line: none;
   color: #ae7c78;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:focus,
+a:active {
+  opacity: 0.2;
 }
 
 .description
